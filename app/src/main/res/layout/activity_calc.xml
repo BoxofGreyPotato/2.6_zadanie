@@ -15,21 +15,21 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:hint="Первый множитель"/>
         <EditText
             android:id="@+id/etSecond"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:hint="Второй множитель"/>
         <EditText
             android:id="@+id/etThird"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:inputType="number"
+            android:inputType="numberDecimal|numberSigned"
             android:hint="Третий множитель"/>
     </LinearLayout>
     <Button

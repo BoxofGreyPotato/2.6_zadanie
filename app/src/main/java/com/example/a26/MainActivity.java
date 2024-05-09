@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 @Override
                 public void onActivityResult(ActivityResult result) {
                     if (result.getData() != null) {
-                        int res = result.getData().getIntExtra("data", 0);
+                        double res = result.getData().getDoubleExtra("data", 0);
                         Log.d("simple_app_tag", "Result: " + res);
                         tvTextValue.setText("Произведение Чисел: " + res);
                     }

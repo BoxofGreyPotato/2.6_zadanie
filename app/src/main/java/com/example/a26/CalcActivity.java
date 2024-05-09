@@ -27,7 +27,7 @@ public class CalcActivity extends AppCompatActivity {
             String secondTermStr = editTextSecond.getText().toString();
             String thirdTermStr = editTextThird.getText().toString();
             if (!firstTermStr.isEmpty() && !secondTermStr.isEmpty() && !thirdTermStr.isEmpty()) {
-                int result = Integer.parseInt(firstTermStr) * Integer.parseInt(secondTermStr) * Integer.parseInt(thirdTermStr);
+                double result = Double.parseDouble(firstTermStr) * Double.parseDouble(secondTermStr) * Double.parseDouble(thirdTermStr);
                 Intent intent = new Intent();
                 intent.putExtra("data", result);
                 setResult(RESULT_OK, intent);
